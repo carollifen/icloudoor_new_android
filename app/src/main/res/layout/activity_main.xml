@@ -1,0 +1,256 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.icloudoor.cloudoor.activity.MainActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/style_color_primary"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            >
+
+            <TextView
+                android:id="@+id/send_verify_code_btn"
+                style="@style/btn"
+                android:layout_marginTop="10dp"
+                android:text="@string/send_verify_code_request"
+                />
+
+            <TextView
+                android:id="@+id/login_btn"
+                style="@style/btn"
+                android:layout_below="@id/send_verify_code_btn"
+                android:layout_marginTop="10dp"
+                android:text="@string/login_request"
+                />
+
+            <TextView
+                android:id="@+id/get_profile_btn"
+                style="@style/btn"
+                android:layout_below="@id/login_btn"
+                android:layout_marginTop="10dp"
+                android:text="@string/get_profile_request"
+                />
+
+            <EditText
+                android:id="@+id/nickname_input"
+                android:layout_width="200dip"
+                android:layout_height="50dp"
+                android:layout_below="@id/get_profile_btn"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/update_profile_btn"
+                style="@style/btn"
+                android:layout_toRightOf="@id/nickname_input"
+                android:layout_alignBaseline="@id/nickname_input"
+                android:layout_marginTop="10dp"
+                android:text="@string/update_profile_request"
+                />
+
+
+            <ImageView
+                android:id="@+id/pic_iv"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@id/nickname_input"
+                android:layout_marginTop="10dip"
+                />
+
+            <TextView
+                android:id="@+id/select_pic_btn"
+                style="@style/btn"
+                android:layout_toRightOf="@id/pic_iv"
+                android:layout_alignTop="@id/pic_iv"
+                android:layout_marginLeft="5dp"
+                android:text="@string/select_picture"
+                />
+
+            <TextView
+                android:id="@+id/verify_password_btn"
+                style="@style/btn"
+                android:layout_below="@id/pic_iv"
+                android:layout_marginTop="10dip"
+                android:text="@string/verify_password_request"
+                />
+
+            <TextView
+                android:id="@+id/download_door_btn"
+                style="@style/btn"
+                android:layout_toRightOf="@id/verify_password_btn"
+                android:layout_alignBaseline="@id/verify_password_btn"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/download_door_request"
+                />
+
+            <TextView
+                android:id="@+id/get_my_address_btn"
+                style="@style/btn"
+                android:layout_toRightOf="@id/download_door_btn"
+                android:layout_alignBaseline="@id/download_door_btn"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/get_my_address_request"
+                />
+
+            <TextView
+                android:id="@+id/get_family_btn"
+                style="@style/btn"
+                android:layout_below="@id/verify_password_btn"
+                android:layout_marginTop="10dp"
+                android:text="@string/get_family_user_request"
+                />
+
+            <TextView
+                android:id="@+id/get_tags_btn"
+                style="@style/btn"
+                android:layout_toRightOf="@id/get_family_btn"
+                android:layout_alignBaseline="@id/get_family_btn"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/get_tags_request"
+                />
+
+            <TextView
+                android:id="@+id/get_config_btn"
+                style="@style/btn"
+                android:layout_below="@id/get_family_btn"
+                android:layout_marginTop="10dp"
+                android:text="@string/get_config_request"
+                />
+
+            <TextView
+                android:id="@+id/get_prop_notify_btn"
+                style="@style/btn"
+                android:layout_toRightOf="@id/get_config_btn"
+                android:layout_alignBaseline="@id/get_config_btn"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:text="@string/get_prop_notify_request"
+                />
+
+            <TextView
+                android:id="@+id/get_banners_btn"
+                style="@style/btn"
+                android:layout_below="@id/get_config_btn"
+                android:layout_marginTop="10dp"
+                android:text="@string/get_banners_request"
+                />
+
+            <TextView
+                android:id="@+id/get_almanac_btn"
+                style="@style/btn"
+                android:layout_toRightOf="@id/get_banners_btn"
+                android:layout_alignBaseline="@id/get_banners_btn"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:text="@string/get_almanac_request"
+                />
+
+            <TextView
+                android:id="@+id/sign_on_btn"
+                style="@style/btn"
+                android:layout_below="@id/get_banners_btn"
+                android:layout_marginTop="10dp"
+                android:text="@string/sign_on_request"
+                />
+
+            <TextView
+                android:id="@+id/sign_off_btn"
+                style="@style/btn"
+                android:layout_toRightOf="@id/sign_on_btn"
+                android:layout_alignBaseline="@id/sign_on_btn"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:text="@string/sign_off_request"
+                />
+
+            <TextView
+                android:id="@+id/get_server_time_btn"
+                style="@style/btn"
+                android:layout_below="@id/sign_on_btn"
+                android:layout_marginTop="10dp"
+                android:text="@string/get_server_time_request"
+                />
+
+            <TextView
+                android:id="@+id/grab_red_btn"
+                style="@style/btn"
+                android:layout_toRightOf="@id/get_server_time_btn"
+                android:layout_alignBaseline="@id/get_server_time_btn"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:text="@string/grab_red_request"
+                />
+
+            <TextView
+                android:id="@+id/get_im_account_btn"
+                style="@style/btn"
+                android:layout_toRightOf="@id/grab_red_btn"
+                android:layout_alignBaseline="@id/grab_red_btn"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:text="@string/get_im_account_request"
+                />
+
+            <TextView
+                android:id="@+id/get_friends_btn"
+                style="@style/btn"
+                android:layout_below="@id/get_server_time_btn"
+                android:layout_marginTop="10dp"
+                android:text="@string/get_friends_request"
+                />
+
+            <TextView
+                android:id="@+id/get_my_keys_btn"
+                style="@style/btn"
+                android:layout_below="@id/get_friends_btn"
+                android:layout_marginTop="10dp"
+                android:text="@string/get_my_keys_request"
+                />
+
+            <TextView
+                android:id="@+id/get_my_borrow_keys_btn"
+                style="@style/btn"
+                android:layout_toRightOf="@id/get_my_keys_btn"
+                android:layout_alignBaseline="@id/get_my_keys_btn"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:text="@string/get_my_borrow_keys_request"
+                />
+
+            <TextView
+                android:id="@+id/get_my_auth_keys_btn"
+                style="@style/btn"
+                android:layout_toRightOf="@id/get_my_borrow_keys_btn"
+                android:layout_alignBaseline="@id/get_my_borrow_keys_btn"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:text="@string/get_my_auth_keys_request"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Cloudoor</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="pic">pic</string>
+
+    <!-- 通用 -->
+    <string name="exit_tip">再按一次离开云门</string>
+
+
+    <!--测试 ：各类接口-->
+    <string name="send_verify_code_request">发送验证码接口</string>
+    <string name="login_request">登录接口</string>
+    <string name="get_profile_request">获取用户资料接口</string>
+    <string name="update_profile_request">更新用户资料接口</string>
+    <string name="select_picture">选择并上传照片</string>
+    <string name="verify_password_request">验证密码接口</string>
+    <string name="download_door_request">下载门锁信息接口</string>
+    <string name="get_my_address_request">我的地址接口</string>
+    <string name="get_family_user_request">家庭成员手机接口</string>
+    <string name="get_tags_request">获取用户标签接口</string>
+    <string name="get_config_request">获取用户配置接口</string>
+    <string name="get_prop_notify_request">获取未读数接口</string>
+    <string name="get_banners_request">获取Banners接口</string>
+    <string name="get_almanac_request">获取黄历接口</string>
+    <string name="sign_on_request">上班签到接口</string>
+    <string name="sign_off_request">下班签到接口</string>
+    <string name="get_server_time_request">获取服务器时间接口</string>
+    <string name="grab_red_request">抢红包接口</string>
+    <string name="get_im_account_request">获取IM帐号接口</string>
+    <string name="get_friends_request">获取好友列表接口</string>
+    <string name="get_my_keys_request">获取我的钥匙</string>
+    <string name="get_my_borrow_keys_request">获取借入钥匙</string>
+    <string name="get_my_auth_keys_request">获取授权钥匙</string>
+
+</resources>

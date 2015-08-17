@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.icloudoor.cloudoor.activity.HomeActivity">
+
+    <item
+        android:id="@+id/action_ins"
+        android:icon="@drawable/ic_instagram_white"
+        android:title="Drawer"
+        app:showAsAction="always"
+        />
+
+</menu>
