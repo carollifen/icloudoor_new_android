@@ -16,6 +16,7 @@ public abstract class BaseApplication extends Application {
 
         @Override
         public void uncaughtException(Thread thread, Throwable exception) {
+            // TODO 捕捉到异常后，将异常上传到友盟错误统计
             mBaseApplication.onExceptionExit(exception);
         }
 

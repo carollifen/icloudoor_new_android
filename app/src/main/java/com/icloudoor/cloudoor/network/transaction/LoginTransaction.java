@@ -2,6 +2,7 @@ package com.icloudoor.cloudoor.network.transaction;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonElement;
+import com.icloudoor.cloudoor.database.AccountManager;
 import com.icloudoor.cloudoor.network.bean.LoginBean;
 import com.icloudoor.cloudoor.network.http.THttpRequest;
 import com.icloudoor.cloudoor.network.protocol.CloudoorHttpRequest;
@@ -37,6 +38,8 @@ public class LoginTransaction extends CloudoorBaseTransaction {
         }
 
         if (bean != null) {
+            // 将用户信息写入到数据库中
+            AccountManager.getInstance().setLoginAccount(bean);
             notifySuccess(bean);
         } else {
             notifyDataParseError();

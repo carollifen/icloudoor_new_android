@@ -9,7 +9,7 @@ import android.provider.BaseColumns;
 public class AccountTable implements BaseColumns {
 
     // 帐号名
-    public static final String TABLE_NAME = "account";
+    public static final String TABLE_NAME = "Account";
 
     // 用户id
     public static final String C_USER_ID = "user_id";
@@ -19,8 +19,11 @@ public class AccountTable implements BaseColumns {
     public static final String C_NICKNAME = "nickname";
     // 手机号码
     public static final String C_MOBILE = "mobile";
-    // 性别
-    public static final String C_SEX = "sex";
+    /**
+     * 性别
+     * @see com.icloudoor.cloudoor.app.CloudoorConstants.Sex
+     */
+    public static final String C_GENDER = "gender";
     // 身份证
     public static final String C_ID_CARD = "id_card";
     // 生日

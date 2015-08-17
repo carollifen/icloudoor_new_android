@@ -65,7 +65,7 @@ public class CloudoorDBHelper extends SQLiteOpenHelper {
         columns.add(new KeyValuePair(AccountTable.C_USERNAME, TEXT));
         columns.add(new KeyValuePair(AccountTable.C_NICKNAME, TEXT));
         columns.add(new KeyValuePair(AccountTable.C_MOBILE, TEXT));
-        columns.add(new KeyValuePair(AccountTable.C_SEX, INT));
+        columns.add(new KeyValuePair(AccountTable.C_GENDER, INT));
         columns.add(new KeyValuePair(AccountTable.C_ID_CARD, TEXT));
         columns.add(new KeyValuePair(AccountTable.C_BIRTHDAY, TEXT));
         columns.add(new KeyValuePair(AccountTable.C_PROVINCE_ID, INT));

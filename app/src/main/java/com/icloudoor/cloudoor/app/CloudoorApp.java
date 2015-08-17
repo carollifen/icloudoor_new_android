@@ -1,6 +1,7 @@
 package com.icloudoor.cloudoor.app;
 
 import com.icloudoor.cloudoor.PreferMgr.CloudoorPreHelper;
+import com.icloudoor.cloudoor.database.AccountManager;
 import com.icloudoor.cloudoor.framework.BaseApplication;
 import com.icloudoor.cloudoor.framework.FrameworkActivityManager;
 import com.icloudoor.cloudoor.network.frame.BaseService;
@@ -58,7 +59,7 @@ public class CloudoorApp extends BaseApplication {
     }
 
     public void doLogout() {
-        // TODO 需要在退出帐号时清除数据的操作
+        AccountManager.getInstance().logout();
         // 清除sid
         CloudoorPreHelper.putUserSid("");
     }
